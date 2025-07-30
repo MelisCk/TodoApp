@@ -1,58 +1,58 @@
 # TodoApp
 
-Modern ve responsive Todo uygulaması - ASP.NET Core Web API + HTML/CSS/JavaScript
+Modern and responsive Todo application - ASP.NET Core Web API + HTML/CSS/JavaScript
 
-##  Özellikler
+## 🚀 Features
 
--  Todo ekleme, düzenleme, silme
--  Tamamlandı olarak işaretleme
--  Filtreleme (Tümü/Bekleyen/Tamamlanan)
--  İstatistikler gösterimi
--  Responsive tasarım
--  Modern UI/UX
--  RESTful API
+- ✅ Add, edit, and delete todos
+- ✅ Mark as completed
+- ✅ Filter (All/Pending/Completed)
+- ✅ Statistics display
+- ✅ Responsive design
+- ✅ Modern UI/UX
+- ✅ RESTful API
 
-## 🛠 Teknolojiler
+## 🛠️ Technologies
 
 - **Backend**: ASP.NET Core 6+ Web API
 - **Database**: SQLite (Entity Framework Core)
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **UI**: Font Awesome Icons
 
-##  Gereksinimler
+## 📋 Requirements
 
-- .NET 6 SDK veya üstü
-- Visual Studio Code/Visual Studio (opsiyonel)
+- .NET 6 SDK or higher
+- Visual Studio Code/Visual Studio (optional)
 
-##  Kurulum
+## 🔧 Installation
 
-1. **Projeyi klonlayın:**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/MelisCK/TodoApp.git
+   git clone https://github.com/MelisCk/TodoApp.git
    cd TodoApp
    ```
 
-2. **NuGet paketlerini yükleyin:**
+2. **Install NuGet packages:**
    ```bash
    dotnet restore
    ```
 
-3. **Database migration'larını çalıştırın:**
+3. **Run database migrations:**
    ```bash
    dotnet ef database update
    ```
 
-4. **Uygulamayı çalıştırın:**
+4. **Run the application:**
    ```bash
    dotnet run
    ```
 
-5. **Tarayıcıda açın:**
+5. **Open in browser:**
    ```
    http://localhost:5066
    ```
 
-##  Proje Yapısı
+## 📁 Project Structure
 
 ```
 TodoApp/
@@ -62,60 +62,62 @@ TodoApp/
 │   ├── TodoContext.cs            # Entity Framework DbContext
 │   └── TodoItem.cs               # Todo model
 ├── wwwroot/
-│   ├── index.html                # Ana sayfa
-│   ├── css/style.css             # Stil dosyası
+│   ├── index.html                # Main page
+│   ├── css/style.css             # Stylesheet
 │   └── js/app.js                 # JavaScript logic
-├── Program.cs                    # Uygulama başlangıcı
-├── appsettings.json             # Konfigürasyon
-├── .gitignore                   # Git ignore kuralları
-└── LICENSE                      # MIT Lisansı
+├── Program.cs                    # Application startup
+├── appsettings.json             # Configuration
+├── .gitignore                   # Git ignore rules
+└── LICENSE                      # MIT License
 ```
 
-##  API Endpoints
+## 🌐 API Endpoints
 
-| Method | Endpoint | Açıklama |
-|--------|----------|----------|
-| GET | `/api/todo` | Tüm todo'ları listele |
-| GET | `/api/todo/{id}` | Belirli todo'yu getir |
-| POST | `/api/todo` | Yeni todo oluştur |
-| PUT | `/api/todo/{id}` | Todo'yu güncelle |
-| DELETE | `/api/todo/{id}` | Todo'yu sil |
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/todo` | Get all todos |
+| GET | `/api/todo/{id}` | Get specific todo |
+| POST | `/api/todo` | Create new todo |
+| PUT | `/api/todo/{id}` | Update todo |
+| DELETE | `/api/todo/{id}` | Delete todo |
 
-##  API Test
+## 📊 API Testing
 
-Swagger UI'ye erişim: `http://localhost:5066/swagger`
+Swagger UI access: `http://localhost:5066/swagger`
 
-##  Deploy
+## 🚀 Deployment
 
-### Azure'a deploy için:
-1. Azure App Service oluşturun
-2. GitHub Actions ile otomatik deploy ayarlayın
-3. Connection string'i Azure'da ayarlayın
+### Deploy to Azure:
+1. Create Azure App Service
+2. Set up GitHub Actions for automatic deployment
+3. Configure connection string in Azure
 
-### Docker ile çalıştırma:
+### Run with Docker:
 ```bash
-# Docker image build et
+# Build Docker image
 docker build -t todo-app .
 
-# Container çalıştır
+# Run container
 docker run -p 5066:80 todo-app
 ```
 
-##  Katkıda Bulunma
+## 🤝 Contributing
 
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Commit yapın (`git commit -m 'Add amazing feature'`)
-4. Push yapın (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-##  Lisans
+## 📄 License
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+This project is licensed under the MIT License.
 
-##  İletişim
+## 📞 Contact
 
-Proje Sahibi - [@MelisCk](https://github.com/MelisCk)
+Project Owner - [@MelisCk](https://github.com/MelisCk)
 
-Proje Linki: [https://github.com/MelisCk/TodoApp](https://github.com/MelisCk/TodoApp)
+Project Link: [https://github.com/MelisCk/TodoApp](https://github.com/MelisCk/TodoApp)
+
+
 

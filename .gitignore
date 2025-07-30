@@ -1,87 +1,49 @@
-# .NET Core
+# .NET Build dosyaları
 bin/
 obj/
 out/
 *.user
 *.suo
-*.cache
-*.docstates
 
 # Visual Studio
 .vs/
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
 
-# Database files
+# Database dosyaları (özel bilgiler içerebilir)
 *.db
 *.db-shm
 *.db-wal
-*.sqlite
-*.sqlite3
+*.sqlite*
 
-# Configuration files with secrets
-appsettings.Development.json
-appsettings.Production.json
-appsettings.*.json
-
-# Logs
-Logs/
+# Log dosyaları (özel bilgiler içerebilir)
 *.log
+Logs/
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Geçici dosyalar
+*.tmp
+*.temp
 
-# Coverage directory used by tools like istanbul
-coverage/
-
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage
-.grunt
-
-# Bower dependency directory
-bower_components
-
-# node_modules
-node_modules/
-
-# IDEs and editors
+# IDE dosyaları
+.vscode/
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+*.swp
+*.swo
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# System Files
+# İşletim sistemi dosyaları
 .DS_Store
 Thumbs.db
 
-# Migration files (opsiyonel - ekibinizle paylaşmak isteyebilirsiniz)
-# Migrations/
+# Node modules (eğer frontend paketleri kullanırsanız)
+node_modules/
 
-# Environment variables
+# Environment variables (ÖNEMLİ: Şifreler burada olabilir)
 .env
 .env.local
 .env.development.local
-.env.test.local
 .env.production.local
 
-# Temporary files
-*.tmp
-*.temp
+# Production ayar dosyaları (şifreler içerebilir)
+appsettings.Production.json
+appsettings.Development.json
+
+# Migration dosyaları (isteğe bağlı)
+# Migrations/

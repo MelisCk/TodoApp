@@ -2,29 +2,29 @@
 
 Modern ve responsive Todo uygulaması - ASP.NET Core Web API + HTML/CSS/JavaScript
 
-## 🚀 Özellikler
+##  Özellikler
 
-- ✅ Todo ekleme, düzenleme, silme
-- ✅ Tamamlandı olarak işaretleme
-- ✅ Filtreleme (Tümü/Bekleyen/Tamamlanan)
-- ✅ İstatistikler gösterimi
-- ✅ Responsive tasarım
-- ✅ Modern UI/UX
-- ✅ RESTful API
+-  Todo ekleme, düzenleme, silme
+-  Tamamlandı olarak işaretleme
+-  Filtreleme (Tümü/Bekleyen/Tamamlanan)
+-  İstatistikler gösterimi
+-  Responsive tasarım
+-  Modern UI/UX
+-  RESTful API
 
-## 🛠️ Teknolojiler
+## 🛠 Teknolojiler
 
 - **Backend**: ASP.NET Core 6+ Web API
 - **Database**: SQLite (Entity Framework Core)
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **UI**: Font Awesome Icons
 
-## 📋 Gereksinimler
+##  Gereksinimler
 
 - .NET 6 SDK veya üstü
 - Visual Studio Code/Visual Studio (opsiyonel)
 
-## 🔧 Kurulum
+##  Kurulum
 
 1. **Projeyi klonlayın:**
    ```bash
@@ -52,7 +52,7 @@ Modern ve responsive Todo uygulaması - ASP.NET Core Web API + HTML/CSS/JavaScri
    http://localhost:5066
    ```
 
-## 📁 Proje Yapısı
+##  Proje Yapısı
 
 ```
 TodoApp/
@@ -71,7 +71,7 @@ TodoApp/
 └── LICENSE                      # MIT Lisansı
 ```
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Açıklama |
 |--------|----------|----------|
@@ -81,11 +81,11 @@ TodoApp/
 | PUT | `/api/todo/{id}` | Todo'yu güncelle |
 | DELETE | `/api/todo/{id}` | Todo'yu sil |
 
-## 📊 API Test
+##  API Test
 
 Swagger UI'ye erişim: `http://localhost:5066/swagger`
 
-## 🚀 Deploy
+##  Deploy
 
 ### Azure'a deploy için:
 1. Azure App Service oluşturun
@@ -101,7 +101,7 @@ docker build -t todo-app .
 docker run -p 5066:80 todo-app
 ```
 
-## 🤝 Katkıda Bulunma
+##  Katkıda Bulunma
 
 1. Fork yapın
 2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
@@ -109,15 +109,13 @@ docker run -p 5066:80 todo-app
 4. Push yapın (`git push origin feature/amazing-feature`)
 5. Pull Request oluşturun
 
-## 📄 Lisans
+##  Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır.
 
-## 📞 İletişim
+##  İletişim
 
 Proje Sahibi - [@MelisCk](https://github.com/MelisCk)
 
 Proje Linki: [https://github.com/MelisCk/TodoApp](https://github.com/MelisCk/TodoApp)
 
----
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!

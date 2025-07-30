@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tasks"></i> Todo Uygulamam</h1>
+        </header>
+
+        <div class="todo-form">
+            <div class="input-group">
+                <input type="text" id="todoInput" placeholder="Yeni görev ekle..." maxlength="100">
+                <button id="addBtn" onclick="addTodo()">
+                    <i class="fas fa-plus"></i> Ekle
+                </button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number" id="totalCount">0</span>
+                <span class="stat-label">Toplam</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="completedCount">0</span>
+                <span class="stat-label">Tamamlanan</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="pendingCount">0</span>
+                <span class="stat-label">Bekleyen</span>
+            </div>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterTodos('all')">Tümü</button>
+            <button class="filter-btn" onclick="filterTodos('pending')">Bekleyen</button>
+            <button class="filter-btn" onclick="filterTodos('completed')">Tamamlanan</button>
+        </div>
+
+        <div class="todo-list" id="todoList">
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i> Yükleniyor...
+            </div>
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <i class="fas fa-clipboard-list"></i>
+                <p>Henüz görev eklenmemiş</p>
+                <small>Yukarıdaki alandan yeni görev ekleyebilirsiniz</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Görevi Düzenle</h3>
+                <button class="close-btn" onclick="closeEditModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="editInput" placeholder="Görev adı...">
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeEditModal()">İptal</button>
+                <button class="btn-primary" onclick="saveEdit()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
